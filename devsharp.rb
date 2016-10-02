@@ -1,35 +1,25 @@
-if ARGV.length == 0 || !ARGV.include?("--help")
-	puts "Type devsharp --help for help"
-	abort
-end
-
-if ARGV.length == 1
-	puts "DEV# - a free event dedicated to helping sharpen your knowledge and expertise"	
-	puts "7th October 2016, Multikino, Aleja Zwycięstwa 14, Gdańsk"
+if ARGV.length == 0 
+	puts "                                                                                                                             "
+	puts "         ##########################     DEV# - a free event dedicated to helping sharpen your knowledge and expertise"
+	puts "         #                        #     7th October 2016, Multikino, Aleja Zwycięstwa 14, Gdańsk"
+	puts "         #                        #"
+	puts "         #   #####   #####        #      8:30 Conference Registration"
+	puts "         #   #   #   #   #        #      9:00 Conference Opening"
+	puts "         #####   #####   #####    #      9:10 Mark Seemann: Humance Code"
+	puts "                             #    #     10:10 Break"
+	puts "    ##########   #####   #####    #     10:30 Karl-Henrik Nilsson: The Internet of (Less) Useless Things"
+	puts "    #        #   #   #   #        #     11:30 Break"
+	puts "    #    #####   #####   #####    #     11:50 Tomasz Heimowski: XSLT - Use the Right Tool for the Job"
+	puts "    #    #                   #    #     12:50 Lunch"
+	puts "    #    #####   #####   #####    #     13:50 Chris Klug: AngularJS – Tips from the Trenches"
+	puts "    #        #   #   #   #        #     14:50 Break"
+	puts "    #        #####   #   ##########     15:10 Mark Seemann: Functional Architecture: the Pits of Success"
+	puts "    #                #                  16:10 Break"
+	puts "    #                #                  16:30 Michał Taszycki: Lost Art of Code Optimization, or why you should grok Commodore 64"
+	puts "    ##################                  17:30 Conference Wrap-up"
 	puts ""
-	puts "devsharp --help agenda"
-	puts "devsharp --help speakers"
-	puts "devsharp --help talks"
+	puts "type 'ruby devsharp.rb speakers' or 'ruby devsharp.rb talks' for detailed information."
 	abort
-end
-
-if ARGV.include?("agenda")
-	puts "DEV# Agenda"
-	puts ""
-	puts " 8:30 Conference Registration"
-	puts " 9:00 Conference Opening"
-	puts " 9:10 Mark Seemann: Humance Code"
-	puts "10:10 Break"
-	puts "10:30 Karl-Henrik Nilsson: The Internet of (Less) Useless Things"
-	puts "11:30 Break"
-	puts "11:50 Tomasz Heimowski: XSLT - Use the Right Tool for the Job"
-	puts "12:50 Lunch"
-	puts "13:50 Chris Klug: AngularJS – Tips from the Trenches"
-	puts "14:50 Break"
-	puts "15:10 Mark Seemann: Functional Architecture: the Pits of Success"
-	puts "16:10 Break"
-	puts "16:30 Michał Taszycki: Lost Art of Code Optimization, or why you should grok Commodore 64"
-	puts "17:30 Conference Wrap-up"
 end
 
 if ARGV.include?("speakers")
